@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-page {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.selected-options-input {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #b3b2b2;
+  border-radius: 2px;
+  padding: 5px 20px 5px 5px;
+  width: 500px; 
+  position: relative;
+  
+}
+
+.selected-options-input:hover{
+  border-color: skyblue;
+
+}
+
+
+
+.selected-options-input span{
+  font-size: medium;
+  font-weight: 700;
+  color: #fafafafa;
+}
+.cross-icon{
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 3px 6px 3px 6px;
+}
+
+input[type="text"] {
+  max-width: 480px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.options-list {
+  background-color:#fafafafa;
+ box-shadow: 1px solid black 19px 20px 20px 20px;
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+  color: black;
+  font-weight: 600;
+}
+
+.options-list li:hover {
+  background-color: skyblue;
+  padding: 0px 0px 0px 0px;
+  
+}
+
+.selected-options-input:hover,
+.selected-options-input.active {
+  border-color: skyblue;
+}
+
+.seleted-items{
+  display: block;
+  background-color: skyblue;
+  margin: 3px;
+  padding:  3px 5px 3px 5px;
+  border-radius: 4px;
+}
+
+.arrow {
+  position: absolute;
+  left: 505px;
+  top: -6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 30px !important;
+  color: #ccc !important;
+}
+
+.btn-submit{
+  padding: 5px 10px 5px 10px;
+  background-color: blue;
+  color: #fafafafa;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  border-color: blue;
+}
+
+.btn-submit:hover{
+   background-color: skyblue;
+   border-color:skyblue;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.error-text{
+  color: red;
+  font-weight: 500;
+  font-family: 16px;
+}
+
+.dangerboarder{
+  border:2px solid red !important;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .selected-options-input {
+    max-width: 300px; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .arrow {
+    left: 93%;
   }
+
+  .selected-options-input span {
+    font-size: small;
+  }
+
+}
+
+@media (max-width:360px) {
+  .selected-options-input {
+    max-width: 250px; 
+  }
+  .arrow {
+    left: 93%;
+}
 }

@@ -1,0 +1,22 @@
+[
+    { "value": "red", "label": "Red" },
+    { "value": "green", "label": "Green" },
+    { "value": "blue", "label": "Blue" },
+    { "value": "yellow", "label": "Yellow" },
+    { "value": "orange", "label": "Orange" },
+    { "value": "purple", "label": "Purple" },
+    { "value": "pink", "label": "Pink" },
+    { "value": "cyan", "label": "Cyan" },
+    { "value": "brown", "label": "Brown" },
+    { "value": "teal", "label": "Teal" },
+    { "value": "grey", "label": "Grey" },
+    { "value": "lime", "label": "Lime" },
+    { "value": "indigo", "label": "Indigo" },
+    { "value": "violet", "label": "Violet" },
+    { "value": "magenta", "label": "Magenta" },
+    { "value": "amber", "label": "Amber" },
+    { "value": "lavender", "label": "Lavender" },
+    { "value": "olive", "label": "Olive" },
+    { "value": "maroon", "label": "Maroon" },
+    { "value": "navy", "label": "Navy" }
+]
